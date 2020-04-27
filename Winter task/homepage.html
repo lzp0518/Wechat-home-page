@@ -1,0 +1,356 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+		<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+	<title>微信，是一个生活方式</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#container{
+			margin: 0 auto;
+			width:100%；
+		}
+		#header{
+			background-color: #282828;
+			height: 75px;
+			width: 100%;
+			color:#FFFFFF;
+			line-height: 75px;
+			overflow: hidden;
+		}
+		a:link {
+			color: #FFFFFF;
+			text-decoration: none;
+			font-size: 15px;
+
+		}
+		a:visited{
+			color: #FFFFFF;
+			text-decoration: none;
+			font-size: 15px;			
+		}
+
+		#logo{
+			float: left;
+			height:50px;
+			width: 150px;
+			margin-left: 250px;
+			margin-top: 2px;
+			margin-right: 80px;
+
+		}
+
+		.box2{
+			display: inline-block;
+			margin-left: 20px;
+			height: 30px;
+			line-height: 30px;
+			width: 50px;
+			text-align: center;
+			background-color: black;
+			border-radius:15px;
+			font-weight: bold;
+			}
+		.box4{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			width: 75px;
+		}
+		.box5{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			width: 90px;
+		}
+		.box6{
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			width: 110px;
+		}
+		.box4:hover{
+			background-color: black;
+			border-radius:15px;
+			font-weight: 200;
+		}
+		.box5:hover{
+			background-color: black;
+			border-radius:15px;	
+			font-weight: 200;	
+		}
+		.box6:hover{
+			background-color: black;
+			border-radius:15px;	
+			font-weight: 200;	
+		}
+
+		#main{
+			background-color: #E0E0E0;
+			height: 425px;
+			width: 100%;
+			overflow:hidden;
+		}
+		p{
+			color: #999;
+		}
+		#left{
+			float: left;
+			margin-top:50px;
+			margin-left: 250px;
+			height: 425px;
+			width: 350px;
+		}
+		#biao{
+			font-size:28px;
+			color: black;
+		}
+		#intro{
+			line-height: 30px;
+			margin-top: 15px;
+		}
+		#down{
+			color: #fff;
+			margin-top: 15px;
+			width: 220px;
+			height: 60px;
+			line-height:60px;
+			text-align: center;
+			font-size: 24px;
+			background-color:rgb(59,153,7);
+			border-radius: 10px;
+			font-weight: bold;
+			box-shadow: 1px 2px 2px #333;
+		}
+		#down:hover{
+			background-color:rgb(69,169,12);
+		}
+		li{
+			height: 25px;
+		}
+		.inside{
+			list-style-position: inside;
+			margin-top: 15px;
+			color:gray;
+			font-size:20px;
+		}
+		.a2:link{
+			color: rgb(59,153,7);
+		}
+		.a2:hover{
+			text-decoration: underline;
+			color: #306;
+		}
+		#right{
+			float: left;
+			margin-left: 80px;
+			height: 425px;
+			width: 500px;
+			overflow: hidden;
+			margin-top: 20px;
+		}
+		#footer{
+			background-color: #FFFFFF;
+			height:430px;
+			width: 100%;
+			overflow: hidden;
+		}
+		#zuo{
+			float:left;
+			height: 430px;
+			width: 660px;
+			margin-left: 230px;
+			margin-top: 30px;
+		}
+		.tu{
+			float: left;
+			width: 200px;
+			height: 430px;
+			margin-left: 20px;
+			font-size: 14px;
+			line-height: 25px;
+
+		}
+		.biaoti{
+			color: black;
+			font-weight: bold;
+		}
+		#you{
+			float: left;
+			height: 430px;
+			width:390px;
+			margin-left:60px;
+			margin-top: 40px;
+		}
+	.date{
+		font-size: 17px;
+		color: gray;
+	}
+	#lian{
+	  text-align:center;
+	}
+	#cao{
+		float: left;
+	}
+	#lianxi{
+		float: left;
+		margin-top: 10px;
+	}
+	.line{
+		height: 1px;
+		width: 1050px;
+		border-top: 1px solid #E0E0E0;
+		margin: 0 auto;
+		margin-bottom: 10px;
+
+	}
+	#last{
+		height:60px;
+		float: left;
+		width: 100%;
+		margin-left: 250px;
+	}
+	.a3:link{
+	color:gray;
+	text-decoration: none;
+	font-size: 13px;
+
+	}
+	.a3:hover{
+		text-decoration: underline;
+	}
+	.di{
+		font-size: 13px;
+		margin-top: 10px;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+	<div id="header">
+	 <div id="logo">
+	 <a href="https://weixin.qq.com/"><img src="logo.png" width="150px" height="50px"></a>
+	 </div>
+	    <div id="nav">
+		<div class="box2"><a href="#">首页</a></div>
+		<div class="box5"><a href="https://kf.qq.com/product/weixin.html" target="_blank">帮助与反馈</a></div>
+		<div class="box4"><a href="https://mp.weixin.qq.com" target="_blank">公众平台</a></div>
+		<div class="box4"><a href="https://open.weixin.qq.com" target="_blank">开放平台</a></div>
+		<div class="box4"><a href="https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F" target="_blank">微信支付</a></div>
+		<div class="box4"><a href="https://ad.weixin.qq.com" target="_blank">微信广告</a></div>
+		<div class="box4"><a href="https://work.weixin.qq.com">企业微信</a></div>
+		<div class="box6"><a href="https://sticker.weixin.qq.com/cgi-bin/mmemoticon-bin/loginpage?t=login/index" target="_blank">表情开发平台
+		</a></div>
+		<div class="box5"><a href="https://wx.qq.com" target="_blank">微信网页版</a></div>
+		</div>
+	</div>
+	<div id="main">
+		<div id="left">
+			<p id="biao">微信，是一个生活方式<p>
+			<p id="intro">超过十亿人使用的手机应用<br>支持发送语音短信、视频、图片和文字<br>可以群聊，仅耗少量流量，适合大部分智能手机</p>
+			<p id="down">免费下载&nbsp;&nbsp;&nbsp;→</p>
+			<ul class="inside">
+			<li><a href="https://weixin110.qq.com/security/readtemplate?t=find_password/index" class="a2" target="_blank">忘记了微信帐号或密码？</a></li>
+			<li><a href="https://weixin110.qq.com/security/readtemplate?t=self_deblock/index" class="a2" target="_blank">自助解除登录或功能限制</a></li>
+			<li><a href="https://weixin110.qq.com/security/readtemplate?t=security_center_website/tools" class="a2" target="_blank">冻结或解冻微信帐号</a></li>
+			</ul>
+		</div>
+		<div id="right" class="carousel" data-ride="carousel"><!--设计轮播图片的容器为class="carousel"-->
+	  	<ol class="carousel-indicators"><!--设计轮播图片计数器 class="caroousel-indicators"-->
+			    <li data-target="#right" data-slide-to="0" class="active"></li>
+			    <li data-target="#right" data-slide-to="1"></li>
+			    <li data-target="#right" data-slide-to="2"></li>
+	  	</ol>
+  <!--设计轮播图片播放区，使用carousel-inner来控制， Wrapper for slides -->
+  		<div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/31caDYg.png">
+		    <div class="carousel-caption">
+		    </div>
+		    </div>
+		    <div class="item">
+		        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2vAOmr0.png" >
+		    <div class="carousel-caption">
+			</div>
+		    </div>
+		    <div class="item">
+		        <img src="https://res.wx.qq.com/a/wx_fed/weixin_portal/res/static/img/2gK_8My.png" >
+			</div>
+		    </div>
+		    <!--  设计轮播图片控制器，向前播放"left carousel-control"控制，向后播放"right carousel-control"控制-->
+			<a class="left carousel-control" href="#right" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			<a class="right carousel-control" href="#right" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			<p style="color: black;font-size: 18px;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 微信 2.9.0 for Windows 发布 </p>
+			<a style="font-size: 18px;color: rgb(59,153,7); "   href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/win/290/index&faq=win_290">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Windows 2.9.0</a>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="zuo">
+			<div class="tu"><img src="1.png" width="200px" height="120px">
+			<br>
+			<p class="biaoti">微信网页版</p>
+			<p>扫一扫二维码</p>
+			<p>就能在浏览器上使用微信</p>
+			<p><a href="https://wx.qq.com/" class="a2">了解更多</a></p>
+		    </div>
+			<div class="tu"><img src="2.png" width="200px" height="120px">
+			<p class="biaoti">微信Mac版</p>
+			<p>极致简洁，迅捷沟通</p>
+			<p><a href="https://mac.weixin.qq.com/" class="a2">了解更多</a></p>
+			</div>
+			<div class="tu"><img src="3.png" width="200px" height="120px" >
+			<p class="biaoti">微信Windows版</p>
+			<p>让沟通更方便</p>
+			<p><a href="https://pc.weixin.qq.com/" class="a2">了解更多</a></p>
+			</div>
+		</div>
+		<div id="you">
+			<p class="biaoti">最新消息</p>
+			<ul class="inside">
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/win/280/index&faq=win_280" class="a2">微信 2.8.0 for Windows 正式版发布 </a>········01-09</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/ios/7010/index&faq=ios_7010" class="a2">微信 7.0.10 for iOS 正式版发布</a>·············01-06</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/android/7010/index&faq=android_7010" class="a2">微信 7.0.10 for Android 正式版发布</a>·········12-26</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/upgrade" class="a2">关于部分 iOS 9 用户无法更新微信</a>·········01-28</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?t=weixin_external_links_content_management_specification" class="a2">微信外部链接内容管理规范</a>·················02-11</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/mac/236/index&faq=mac_236" class="a2">微信 2.3.6 for Mac 正式版发布</a>··············01-04</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=page/faq/web/21/index&faq=web_21" class="a2">微信网页版 2.1 版本发布</a>····················01-17</li>
+			<li class="date"><a href="https://sticker.weixin.qq.com/" class="a2">微信表情开放平台上线</a>······················07-29</li>
+			<li class="date"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_rumor_filter" class="a2">官方辟谣公众号开通</a>·························10-28</li>
+			</ul>
+			<br>
+			<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_faq_list" class="a2">查看更多</a>
+			<br>
+			<br>
+			<div class="lian">
+				<div id="cao">
+			<img src="last.png" alt="" width="40px"  align="" ></div>
+			<div id="lianxi"><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&ADTAG=&check=false&nav=contact&t=weixin_contact&loc=readtemplate,weixin,body,5" style="color: black; 		font-weight: bold;">联系我们</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="line"></div>
+	<div id="last" style="color: gray">
+
+		<a href="https://www.tencent.com/" class="a3">关于腾讯</a> &nbsp;| 
+		<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default" class="a3">服务条款</a>&nbsp;| 
+		<a href="https://weixin.qq.com/cgi-bin/readtemplate?&t=page/agreement/personal_account&lang=zh_CN" class="a3">使用规范</a>&nbsp;| 
+		<a href="https://service.qq.com/special_auto/weixin.html" class="a3">客服中心</a>&nbsp;| 
+		<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" class="a3">隐私保护指引</a>&nbsp;| 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<a href="https://weixin.qq.com/cgi-bin/readtemplate?t=weixin&lang=zh_CN&setlanguage=1" class="a3">简体中文</a> &nbsp;|
+		<a href="https://wechat.com/zh_TW/" class="a3">繁體中文</a> &nbsp;|
+		<a href="https://wechat.com/en/" class="a3">English </a> &nbsp;|
+		<p class="di">© 1998 - 2020 Tencent Inc. All Rights Reserved</p>
+	</div>
+	</div>
+</body>
+</html>
